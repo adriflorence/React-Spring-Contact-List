@@ -12,7 +12,7 @@ export default class Contacts extends Component {
 
     // fetching the data before component renders
     componentDidMount(){
-        fetch('http://localhost:8080/contacts')
+        fetch("http://localhost:8080/api/contacts")
         .then(response => response.json())
         .then(data => this.setState({contacts:data}))
     }
